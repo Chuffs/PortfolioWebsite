@@ -1,0 +1,50 @@
+div.overlay {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  max-width: 485px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+div.beta {
+  width: 95%;
+  padding-top: 15px;
+  display: inline;
+  float: left;
+}
+
+p.x {
+  width: 5%;
+  display: inline;
+  float: right;
+}
+
+.x {
+  text-align: right;
+}
+
+div.overlayHidden p {
+  display: none;
+}
+
+p.beta {
+  padding-right: 15px;
+}
+
+a.beta {
+  text-decoration: underline;
+}
+
+a.beta:hover {
+  color: blue;
+}
+
+.overlayHidden div.beta {
+  display: none;
+}

@@ -1,0 +1,34 @@
+.social-span {
+  margin-top: 50px;
+  height: 115px;
+  bottom: 0;
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: #649cb4;
+  color: white;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .social-span {
+    margin-top: 450px;
+  }
+}
+
+.social-container {
+  text-align: center;
+  width: 96%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.social-container a{
+  text-decoration: none;
+  color: white;
+}
+
+i {
+  padding-top: 25px;
+  width: 30%;
+  display: inline-block;
+}

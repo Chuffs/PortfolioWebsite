@@ -1,0 +1,68 @@
+<html>
+
+  {% include head.html %}
+
+  {% include _js/logoimage.js %}
+  {% include _js/word-cloud.js %}
+  {% include _js/blog-port-icon.js %}
+
+  <title> Home | micromatt.tech </title>
+
+    <body onload="checkOverlayCookie()">
+      {% gtm body %}
+      {% include beta-overlay.html %}
+    <div>
+      <div>
+
+        {% include navbar.html %}
+
+        <div class="hero-image" id="hero-image">
+          <div>
+            <p class="logo-span"><img src="{{ site.url }}/assets/circlelogo.png" id="logo-image"></p>
+          </div>
+        </div>
+
+        <div>
+          <div class="span-blue" id="span">
+            <p class="wordcloud"><img src="{{ site.url }}/assets/Word Cloud.png" id="word-cloud"></p>
+          </div>
+        </div>
+
+        <div class="span-grey">
+            <div class="span-grey-div">
+              <p class="link-span">
+                <a href="{{ site.url }}/projects/">
+                  <img src="{{ site.url }}/assets/portfolio-icon.png" class="span-grey-img">
+                </a>
+                <a href="{{ site.url }}/blog/">
+                  <img src="{{ site.url }}/assets/blog-icon.png" class="span-grey-img">
+                </a>
+              </p>
+            </div>
+        </div>
+
+        <div class="blog-content">
+          <div class="recent-post">
+            <h1 class="recent-post">Recent Blog Activity: </h1>
+            <div>
+              {% assign post = site.posts.first %}
+              {% assign content = post.content %}
+              {% assign wordCount = post.content | number_of_words %}
+              {% include recent_post.html %}
+            </div>
+          </div>
+          <div class="all-posts">
+            <h1 class="all-posts"><a href="{{ site.url }}/archive/">All Posts: </a></h1>
+            {% for post in site.posts limit:5 offset:1 %}
+              <h3 class="all-posts"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            {% endfor %}
+              <h3 class="all-posts"><a href="{{ site.url }}/archive/">Post Archive</a></h3>
+          </div>
+        </div>
+      </div>
+
+      {% include social-media-highlight.html %}
+
+    </div>
+    </body>
+  </html>

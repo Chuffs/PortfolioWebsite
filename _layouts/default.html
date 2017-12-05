@@ -1,0 +1,23 @@
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% gtm body %}
+
+    {% include navbar.html %}
+
+    <div class="page-contents">
+      {{ content }}
+    </div>
+
+  </body>
+
+  <div class="bottom">
+    {% include social-media-highlight.html %}
+
+    {% include footer.html %}
+  </div>
+
+</html>

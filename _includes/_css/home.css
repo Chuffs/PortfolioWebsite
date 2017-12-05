@@ -1,0 +1,137 @@
+/* Cover Image and Logo */
+.hero-image {
+  padding-top: 80px;
+  background-image: url("../assets/heatsink.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.logo-span {
+  text-align: center;
+  padding-top: 7%;
+}
+
+.wordcloud {
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* website sections */
+.span-blue {
+  margin-top: -2em;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  height: 25%;
+  background-color: #649cb4;
+  color: white;
+  z-index: 1;
+}
+
+.span-grey {
+  margin-top: -1em;
+  padding-top: 25px;
+  height: 320px;
+  background-color: #333;
+  color: white;
+  z-index: 1;
+}
+
+.link-span {
+  text-align: center;
+}
+
+.link-span a {
+  padding-right: 10px;
+}
+
+.span-grey-div {
+  width: 96%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.span-grey-img {
+  width: 40%;
+  max-width: 194px;
+  max-height: 288px;
+  display: inline-block;
+}
+
+/* word cloud */
+.word-cloud {
+  padding-top: 10%;
+  padding-left: 15%;
+  padding-bottom: 10%;
+}
+
+/* recent blog posts */
+.blog-content {
+  padding-top: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.blog-title {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+
+div.entry-content a {
+  font-style: italic;
+}
+
+div.entry-content a:hover {
+  background: #649cb4;
+}
+
+p.continue {
+  text-align: center;
+  font-style: normal;
+}
+
+@media screen and (min-width: 1024px) {
+  div.recent-post {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 59%;
+    display: inline;
+    float: left;
+  }
+
+  div.recent-post div {
+    padding-left: 15px;
+  }
+
+  div.all-posts {
+    font-size: 0.9em;
+    margin-top: 7%;
+    width: 30%;
+    display: inline;
+    float: right;
+  }
+
+  h3.all-posts {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  div.recent-post {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    max-width: 960px;
+  }
+  div.recent-post div{
+    padding-left: 15px;
+  }
+
+  div.all-posts {
+    display: none;
+  }
+}

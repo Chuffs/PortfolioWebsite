@@ -1,0 +1,28 @@
+---
+layout: null
+---
+
+body, html {
+  min-height: 100%;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family: "azo-sans-web",sans-serif;
+  background-color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+{% include _css/beta.css %}
+
+{% include _css/navbar.css %}
+{% include _css/home.css %}
+{% include _css/social.css %}
