@@ -1,0 +1,283 @@
+<html>
+
+  <head>
+
+<!-- Begin Jekyll GTM tag v1.0.1 -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KKV4RTF');</script>
+<!-- End Jekyll GTM tag v1.0.1 -->
+
+
+<!-- Required meta tags -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+
+<!-- Script for Adobe Typekit -->
+<script src="https://use.typekit.net/pob8zuk.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<!-- Stylesheets for website -->
+<link rel = "stylesheet" type = "text/css" href = "http://micromatt.tech/site.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- JQUERY -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- Favicon -->
+<link rel = "shortcut icon" href = "/assets/favicon.ico">
+
+<!-- Responsive NavBar JS -->
+<!-- script to toggle menu on mobile devices -->
+<script>
+  function navbarToggle() {
+      var x = document.getElementById("mobile-nav");
+      if (x.className === "link") {
+          x.className += "-toggled";
+      } else {
+          x.className = "link";
+      }
+  }
+</script>
+
+
+</head>
+
+
+  <!-- script to change logo-image size depending on screen size -->
+<script>
+  $(document).ready(function(){
+    var windowwidth = $(window).width();
+    var imagewidth = windowwidth/2;
+    if(imagewidth > 300){
+      $('#logo-image').width(300)
+    } else {
+      $('#logo-image').width(imagewidth);
+    }
+  })
+  $(window).on('resize', function(){
+    var windowwidth = $(window).width();
+    var imagewidth = windowwidth/2;
+    if(imagewidth > 300){
+      $('#logo-image').width(300)
+    } else {
+      $('#logo-image').width(imagewidth);
+    }
+  })
+</script>
+
+  <!-- change blue-span height and size of word cloud -->
+<script>
+  $(document).ready(function(){
+    var windowWidth = $(window).width();
+    var cloudWidth = windowWidth/1.5;
+
+    if(cloudWidth > 400){
+      $('#word-cloud').width(400);
+    } else {
+      $('#word-cloud').width(cloudWidth);
+    }
+  })
+  $(window).on('resize', function(){
+    var windowWidth = $(window).width();
+    var cloudWidth = windowWidth/1.5;
+
+    if(cloudWidth > 400){
+      $('#word-cloud').width(400);
+    } else {
+      $('#word-cloud').width(cloudWidth);
+    }
+  })
+</script>
+
+  <!-- script to alter sizing of blog & portfolio icons -->
+<script>
+  $(document).ready(function(){
+    var windowWidth = $(window).width();
+    var iconWidth = windowWidth * 0.15;
+
+    if(iconWidth > 200){
+      $('.bp-icon').width(200);
+    } else {
+      $('.bp-icon').width(iconWidth);
+    }
+
+  })
+</script>
+
+
+  <title> Home | micromatt.tech </title>
+
+    <body onload="checkOverlayCookie()">
+      <!-- Begin Jekyll GTM tag v1.0.1 -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKV4RTF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Jekyll GTM tag v1.0.1 -->
+
+      <!--  TO-DO List for website development -->
+<!-- beta overlay javascript -->
+<!-- script to toggle view of beta-overlay -->
+<script>
+  function overlayToggle() {
+    var x = document.getElementById("overlay");
+    x.className = "overlayHidden";
+    setOverlayCookie("display", 1, 7);
+  }
+  function setOverlayCookie(cname, cvalue, exdays){
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = " expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+  function checkOverlayCookie(){
+    var betaDisplay = getOverlayCookie("display");
+    if (betaDisplay != ""){
+      var x = document.getElementById("overlay")
+      x.className = "overlayHidden";
+    }
+  }
+  function getOverlayCookie(cname){
+    var cookie = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(cookie) == 0) {
+        return c.substring(cookie.length, c.length);
+      }
+    }
+    return "";
+  }
+</script>
+
+<div class="overlay" id="overlay">
+  <p class="x" id="overlay"><a href="javascript:void(0);" onclick="overlayToggle()">X</a></p>
+  <div class="beta">
+    <p class="beta">
+      This site is under construction,
+      please bear with us whilst we continue to improve the site.
+    </p>
+    <p class="beta">
+      To view a current TO-DO list of the site,
+      <a href="http://micromatt.tech/beta/" class="beta">click here</a>.
+    </p>
+  </div>
+</div>
+
+    <div>
+      <div>
+
+        <div class="navbar">
+  <!-- Green bar at top of page -->
+  <div class="style-bar"></div>
+  <!-- Website navigation -->
+    <ul>
+      <div class="navbar-nav" id="navbar">
+        <li><a href="/"><img src="http://micromatt.tech/assets/websitelogo.png" style="width: 10em" class="navbar-logo"></a></li>
+        <li><a href="http://micromatt.tech/blog/" class="navbar-item">Blog</a></li>
+        <li><a href="http://micromatt.tech/projects/" class="navbar-item">Projects</a></li>
+        <li><a href="http://micromatt.tech/about/" class="navbar-item">About</a></li>
+        <li><a href="http://micromatt.tech/contact/" class="navbar-item">Contact</a></li>
+        <li><a href="javascript:void(0);" style="font-size:25px;" class="navbar-toggle" onclick="navbarToggle()">&#9776;</a></li>
+      </div>
+    </ul>
+</div>
+<div class="link" id="mobile-nav">
+  <div class="mobile-link">
+    <a href="http://micromatt.tech/blog/"><div>Blog</div></a>
+  </div>
+  <div class="mobile-link">
+    <a href="http://micromatt.tech/projects/"><div>Projects</div></a>
+  </div>
+  <div class="mobile-link">
+    <a href="http://micromatt.tech/about/"><div>About</div></a>
+  </div>
+  <div class="mobile-link">
+    <a href="http://micromatt.tech/contact/"><div>Contact</div></a>
+  </div>
+</div>
+
+
+        <div class="hero-image" id="hero-image">
+          <div>
+            <p class="logo-span"><img src="http://micromatt.tech/assets/circlelogo.png" id="logo-image"></p>
+          </div>
+        </div>
+
+        <div>
+          <div class="span-blue" id="span">
+            <p class="wordcloud"><img src="http://micromatt.tech/assets/Word Cloud.png" id="word-cloud"></p>
+          </div>
+        </div>
+
+        <div class="span-grey">
+            <div class="span-grey-div">
+              <p class="link-span">
+                <a href="http://micromatt.tech/projects/">
+                  <img src="http://micromatt.tech/assets/portfolio-icon.png" class="span-grey-img">
+                </a>
+                <a href="http://micromatt.tech/blog/">
+                  <img src="http://micromatt.tech/assets/blog-icon.png" class="span-grey-img">
+                </a>
+              </p>
+            </div>
+        </div>
+
+        <div class="blog-content">
+          <div class="recent-post">
+            <h1 class="recent-post">Recent Blog Activity: </h1>
+            <div>
+              
+              
+              
+              <h2>
+  
+    <a href="/blog/2017/12/05/Cookie-Update.html" class="blog-title">Cookie Update</a>
+  
+</h2>
+<div class="recent-blog-content">
+  <div class="entry-content"><p>A small update on the website side of things - We are now using cookies to hide or display the “beta overlay” popup that appears in the bottom right side of the homepage, so that returning visitors don’t continue to see it after they have hit the little ‘x’. You can still see the To-Do list by visiting: <a href="/beta/">micromatt.tech/beta/</a>.</p> <p>Over the next few days I’ll be updating the Privacy Policy to reflect this change as well as adding an easy access link to the Policy Page, which can currently be found by visiting <a href="/privacypolicy.htm">here</a>.</p> <p>In other news, I should be starting work on the introduction/channel trailer video for the channel shortly - which will then allow me to...</div>
+  <a class="btn btn-default" href="/blog/2017/12/05/Cookie-Update.html"></a>
+  
+    <p class="continue"><a href="/blog/2017/12/05/Cookie-Update.html" class="continue">Continue Reading...</a></p>
+  
+</div>
+
+            </div>
+          </div>
+          <div class="all-posts">
+            <h1 class="all-posts"><a href="http://micromatt.tech/archive/">All Posts: </a></h1>
+            
+              <h3 class="all-posts"><a href="/blog/2017/11/11/Development-Update.html">Development Update</a></h3>
+            
+              <h3 class="all-posts"><a href="/blog/2017/10/01/Jekyll-Update.html">Jekyll Site Update</a></h3>
+            
+              <h3 class="all-posts"><a href="/blog/2017/08/30/Day-One-Blog.html">Welcome to MicroMatt.tech!</a></h3>
+            
+              <h3 class="all-posts"><a href="http://micromatt.tech/archive/">Post Archive</a></h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-span">
+  <div class="social-container">
+    <a href="https://www.youtube.com/channel/UCsjYwlaeT48XV7kxRLkE6bw"><i class="fa fa-youtube-play fa-3x"></i></a>
+    <a href="https://twitter.com/chuffs97"><i class="fa fa-twitter fa-3x"></i></a>
+    <a href="https://github.com/Chuffs"><i class="fa fa-github fa-3x"></i></a>
+  </div>
+</div>
+
+
+      <div class="footer">
+  <p>&copy;2017 micromatt.tech | <a href="http://micromatt.tech/privacypolicy.htm">Privacy Policy</a> | <a href="http://micromatt.tech/contact/">Contact Us</a>
+</div>
+
+
+    </div>
+    </body>
+  </html>

@@ -26,3 +26,4 @@ a {
 {% include _css/navbar.css %}
 {% include _css/home.css %}
 {% include _css/social.css %}
+{% include _css/footer.css %}
