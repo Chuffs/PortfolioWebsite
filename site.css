@@ -2,7 +2,7 @@
 layout: null
 ---
 
-body, html {
+html, body {
   min-height: 100%;
   margin-top: 0px;
   margin-right: 0px;
@@ -27,3 +27,7 @@ a {
 {% include _css/home.css %}
 {% include _css/social.css %}
 {% include _css/footer.css %}
+
+{% include _css/blogpage.css %}
+
+{% include _css/defaultpage.css %}
