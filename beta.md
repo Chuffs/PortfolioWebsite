@@ -1,6 +1,6 @@
 ---
 layout: todolist
-title: TO-DO List
+title: "TO-DO List"
 permalink: /beta/
 ---
 
