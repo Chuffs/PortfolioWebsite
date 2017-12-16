@@ -9,7 +9,7 @@ Current TO-DO List:
 - ~~Mobile Navigation~~
 - ~~Better looking home page~~
 - ~~Footer~~
-- Blog Post "Read More" Page
+- ~~Blog Post "Read More" Page~~
 - Privacy Policy
 - Other pages
   - About Page
