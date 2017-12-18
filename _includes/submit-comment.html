@@ -1,0 +1,47 @@
+<h3>Post a comment</h3>
+<p style="font-style: italic; font-size: 0.9em;">
+  All comments are held for moderation; basic HTML or Markdown formatting accepted.
+</p>
+
+  <form id="gform" method="POST" class="pure-form pure-form-stacked" class="comment"
+  action="https://script.google.com/macros/s/AKfycbyvRVcJjsme-GGnlHtVHTxnYu7AcR-IPVDQUUvraiSHZ98lUN8/exec">
+
+    <table class="comment">
+      <tr>
+        <th>Name:</th>
+        <td><input type="text" size="25" name="name" placeholder="John Smith"/> (required)</td>
+      </tr>
+      <tr>
+        <th>E-mail:</th>
+        <td><input type="text" size="25" name="email" placeholder="your.name@email.com"/> (required, not published)</td>
+        <span id="email-invalid" style="display:none; font-color: red;">Please enter a valid email address!</span>
+      </tr>
+      <tr>
+        <th>Please Select:</th>
+        <td>
+          <select name="Post ID">
+            <option value="Comment on {{ page.title }}">Submit New Comment</option>
+
+            {% for comments in pageComments %}
+              <option value="Reply to {{ comments.title }}({{ comments.id }})" title="{{ comments.content }}">Respond to {{ comments.poster }}'s thread.</option>
+              <input type="hidden"
+              {% endfor %}
+          </select>
+          (hover for comment hint)
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><textarea name="message" rows="10" cols="60"></textarea></td>
+      </tr>
+      <tr>
+        <td class="commentForm"><input type="submit" name="submit" value="Submit Comment"/></td>
+      </tr>
+    </table>
+
+  </form>
+
+<!-- Customise the Thankyou Message People See when they submit the form: -->
+<div style="display:none;" id="thankyou_message">
+  <h2>Thank you for your comment! Your comment is queued for moderation.</h2>
+  <h4>If you wish to contact us, please use our <em><a href="/contact/">contact form</a></em> instead.<h4>
+</div>

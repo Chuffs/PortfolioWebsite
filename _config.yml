@@ -24,15 +24,18 @@ sass:
 
 show_drafts: false
 
+# collections
 collections:
   comments:
-    output: false
-    permalink: /:collection/:name
+    output: true
 
 #custom variables
 youtube: "https://www.youtube.com/channel/UCsjYwlaeT48XV7kxRLkE6bw"
 github: "https://github.com/Chuffs"
 twitter: "https://twitter.com/chuffs97"
+
+comment: "Submit Comment"
+reply: "Submit Reply"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

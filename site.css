@@ -21,6 +21,18 @@ a {
   color: black;
 }
 
+.test {
+  border-color: red;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.google-ads {
+  margin-top: 150px;
+  width: 60%;
+  margin: 0 auto;
+}
+
 {% include _css/beta.css %}
 
 {% include _css/navbar.css %}

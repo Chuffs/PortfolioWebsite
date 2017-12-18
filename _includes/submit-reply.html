@@ -3,10 +3,10 @@
     All comments are held for moderation; basic HTML or Markdown formatting accepted.
   </p>
 
-    <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net" class="comment"
+    <form id="gform" method="POST" class="pure-form pure-form-stacked" class="comment"
     action="https://script.google.com/macros/s/AKfycbyi1FnB0I54txjYv9UXMWuHjT4ty-LG682beiZzbJe58nFL0Pc/exec">
 
-      <input type="hidden" name="Post Title" value="{{ page.title }}" />
+      <input type="hidden" name="Reply ID" value="{{ postID }}"/>
 
       <table class="comment">
         <tr>
@@ -16,12 +16,13 @@
         <tr>
           <th>E-mail:</th>
           <td><input type="text" size="25" name="email" /> (required, not published)</td>
+          <span id="email-invalid" style="display:none">Must be a valid email address</span>
         </tr>
         <tr>
-          <td colspan="2"><textarea name="comment" rows="10" cols="60" ></textarea></td>
+          <td colspan="2"><textarea name="message" rows="10" cols="60" ></textarea></td>
         </tr>
         <tr>
-          <td><input type="submit" name="submit" value="Submit Comment" /></td>
+          <td><input type="submit" name="submit" value="Submit Reply" /></td>
         </tr>
       </table>
 
@@ -29,12 +30,5 @@
 
   <!-- Customise the Thankyou Message People See when they submit the form: -->
   <div style="display:none;" id="thankyou_message">
-    <h2><em>Thanks</em> for contacting us!
-      We will get back to you soon!</h2>
+    <h2>Thank you for your comment! Your comment is queued for moderation. </h2>
   </div>
-
-  <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" type="text/javascript"
-  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-  <!-- <script data-cfasync="false" type="text/javascript"
-  src="/form-submission-handler.js"></script> -->
