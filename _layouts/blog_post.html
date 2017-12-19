@@ -3,7 +3,6 @@
 
   {% include head.html %}
 
-  {% include _js/comments.js %}
   {% include _js/CommentSubmitHandler.js %}
 
   <body>
@@ -11,7 +10,7 @@
     {% gtm body %}
     {% include navbar.html %}
 
-    <div class="blog-content">
+    <div class="page-content blog-content">
       <h1 class="blog-title"> {{ page.title }} </h1>
       <h4 class="blog-date">
         {% assign d = page.date | date: "%-d" %}
@@ -36,83 +35,15 @@
 
       <hr>
 
-      {% assign pageComments = site.comments | where: "post", page.title %}
-      {% assign numComments = pageComments | size %}
+      {% include commentsSection.html %}
 
-      <div class="numComments">
-
-        <h2><u>Comments</u></h2>
-
-        {% if numComments == 0 %}
-          <p  class="noComments">No Comments found! Start the discussion below!</p>
-        {% elsif numComments > 0 %}
-          <p> Join the discussion below!</p>
-        {% endif %}
-
-      </div>
-
-      <div class="comments">
-        {% for comments in pageComments %}
-          <div class="commentThread">
-            <h3 class="comments">
-              {{ comments.poster }}
-            </h3>
-            <p class="commentDate"> on the
-              {% assign c-date = comments.date | date: "%-d" %}
-              {% case c-date %}
-                {% when '1' or '21' or '31' %}{{ c-date }}st
-                {% when '2' or '22' %}{{ c-date }}nd
-                {% when '3' or '23' %}{{ c-date }}rd
-                {% else %}{{ c-date }}th
-              {% endcase %} of
-              {{ comments.date | date: "%B" }}
-              {{ comments.date | date: "%Y" }}, at {{ comments.time }} said:
-            </p>
-            <p class="commentContent">
-              {{ comments.content }}
-            </p>
-
-            {% assign commentReply = site.comments | where: "postID", comments.id | sort: time %}
-
-            <div class="commentReplys">
-              {% for comments in commentReply %}
-                <div class="singleReply">
-                  <h3 class="comments">
-                    {{ comments.poster }}
-                  </h3>
-                  <p class="commentDate"> on the
-                    {% assign c-date = comments.date | date: "%-d" %}
-                    {% case c-date %}
-                      {% when '1' or '21' or '31' %}{{ c-date }}st
-                      {% when '2' or '22' %}{{ c-date }}nd
-                      {% when '3' or '23' %}{{ c-date }}rd
-                      {% else %}{{ c-date }}th
-                    {% endcase %} of
-                    {{ comments.date | date: "%B" }}
-                    {{ comments.date | date: "%Y" }}, at {{ comments.time }} said:
-                  </p>
-                  <p class="replyContent">
-                    {{ comments.content }}
-                  </p>
-                </div>
-              {% endfor %}
-            </div>
-
-          </div>
-        {% endfor %}
-      </div>
-
-      <hr>
-
-      {% include submit-comment.html %}
-
-      <div class="google-ads">
+      <div class="google-ads test">
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <ins class="adsbygoogle"
              style="display:block; text-align:center;"
              data-ad-layout="in-article"
              data-ad-format="fluid"
-             data-ad-client="ca-pub-9063236029631516"
+             data-ad-client="{{ site.google-ads }}"
              data-ad-slot="4845593260"></ins>
         <script>
              (adsbygoogle = window.adsbygoogle || []).push({});

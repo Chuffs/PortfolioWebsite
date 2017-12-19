@@ -2,8 +2,9 @@
 layout: blog_post
 title:  "Jekyll Site Update"
 date:   2017-09-31
-categories: blog
+categories: ['blog', 'site-update', 'jekyll']
 ---
+
 The site is now using Jekyll!
 
 I have to admit it took a **VERY** long time to convert it to the more fluid and dynamic ways of Jekyll. As you can see the homepage is a *little* different to what it was in “version one”. I have added a  few more parts to the page, such as sections for an about the site (about me page will be coming later, along with a contact form) as well as a truncated snapshot of the most recent blog post.

@@ -3,7 +3,7 @@ url: "https://localhost:4000" # the base hostname & protocol for your site, e.g.
 
 show_drafts: true
 
-host: 0.0.0.0
+host: localhost
 port: 4000
 
 sass:
@@ -11,4 +11,6 @@ sass:
 
 google:
   tag_manager:
-    container_id: 00000000
+    container_id: GTM-000000
+
+google-ads: ca-pub-0000000000000000

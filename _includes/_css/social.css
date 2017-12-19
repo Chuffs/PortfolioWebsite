@@ -4,12 +4,18 @@
   bottom: 0;
   padding-left: 20%;
   padding-right: 20%;
-  background-color: #649cb4;
+  background-color: #{{ site.micromatt-blue }};
   color: white;
   z-index: 1;
 }
 
 @media screen and (min-width: 1024px) {
+  .social-span {
+      margin-top: 450px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .social-span {
     margin-top: 450px;
   }

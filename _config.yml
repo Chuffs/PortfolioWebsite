@@ -1,10 +1,11 @@
 # Use 'bundle exec jekyll build' to create files for github
-# Use 'bundle exec jekyll serve --config "_config.yml, _config_dev.yml"'
+# Use 'bundle exec jekyll serve --config _config.yml, _config_dev.yml'
 title: MicroMatt
 email: matt@micromatt.tech
 description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://micromatt.tech" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /blog/:year/:month/:day/:title/
 twitter_username: chuffs97
 github_username:  Chuffs
 future: true
@@ -12,7 +13,7 @@ future: true
 # Google Tag Manager
 google:
   tag_manager:
-    container_id: GTM-KKV4RTF
+    container_id: GTM-WQS8N26
 
 # Build settings
 markdown: kramdown
@@ -34,8 +35,10 @@ youtube: "https://www.youtube.com/channel/UCsjYwlaeT48XV7kxRLkE6bw"
 github: "https://github.com/Chuffs"
 twitter: "https://twitter.com/chuffs97"
 
-comment: "Submit Comment"
-reply: "Submit Reply"
+micromatt-green: 6ac68f
+micromatt-blue: 649cb4
+
+google-ads: ca-pub-9063236029631516
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

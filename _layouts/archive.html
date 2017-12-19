@@ -1,0 +1,60 @@
+<html>
+
+  {% include head.html %}
+
+  <title>{{ page.title }}</title>
+
+  <body>
+
+    {% gtm body %}
+
+    {% include navbar.html %}
+
+    <div class="page-content">
+
+      {% assign numPosts = 0 %}
+      {% for item in site.posts %}
+        {% unless item.published == false %}
+          {% assign numPosts = numPosts | plus: 1 %}
+        {% endunless %}
+      {% endfor %}
+
+      <h1>Blog Archive</h1>
+      <h4 class="archiveCount"> {{ numPosts }} posts found!</h4>
+
+      {% assign allPosts = site.posts | sort: 'date' | reverse %}
+      {% for post in allPosts %}
+        {% assign currentDate = post.date | date: "%Y" %}
+        {% if currentDate != myDate %}
+          {% unless forloop.first %}</ul>{% endunless %}
+          <h1>{{ currentDate }}</h1>
+          <hr>
+          <ul class="archiveYear">
+            {% assign myDate = currentDate %}
+        {% endif %}
+        <div class="archivePosts">
+          <li>
+            <a href="{{ post.url }}" class="archiveLink">
+              <span class="archiveDate">{{ post.date | date: "%B %-d, %Y" }} - </span>{{ post.title }}
+            </a>
+            <span class="commentShow">
+              {% assign postComments = site.comments | where: "belongs_to", post.title %}
+              {% assign numComments = postComments | size %}
+
+              {{ numComments }} comments
+            </span>
+          </li>
+        <div>
+        {% if forloop.last %}</ul>{% endif %}
+      {% endfor %}
+
+      <hr>
+
+    </div>
+
+    {% include social-media-highlight.html %}
+
+    {% include footer.html %}
+
+  </body>
+</html>

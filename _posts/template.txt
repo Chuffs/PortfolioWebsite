@@ -1,0 +1,6 @@
+layout: blog_post
+title:
+date:
+categories:
+
+Links - {:target="_blank" class="blog-links"}

@@ -2,8 +2,9 @@
 layout: blog_post
 title:  "Development Update"
 date:   2017-11-11
-categories: ['blog']
+categories: ['blog', 'site-update', 'self-post']
 ---
+
 The past few weeks have been absolutely hectic.
 
 I’ve been working 30+ hours a week, all whilst studying a full time load and thus have had no time to work on the site. We are in the midst of exam period for uni, with my last exam being next week. Once that it over and done with, I can refocus my attention to getting the site finished and cleaned up.

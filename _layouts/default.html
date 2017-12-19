@@ -2,6 +2,8 @@
 
   {% include head.html %}
 
+  <title> {{ page.title }}</title>
+
   <body>
 
     {% gtm body %}
@@ -9,7 +11,7 @@
     {% include navbar.html %}
 
     <div class="page-contents">
-      {{ content }}
+      {{ page.content }}
     </div>
 
     {% include social-media-highlight.html %}

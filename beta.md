@@ -14,7 +14,7 @@ Current TO-DO List:
 - Other pages
   - About Page
   - Contact Page
-  - Archive Page
+  - ~~Archive Page~~
   - Projects/Portfolio Page
 
 

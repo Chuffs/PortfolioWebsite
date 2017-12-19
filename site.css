@@ -29,8 +29,17 @@ a {
 
 .google-ads {
   margin-top: 150px;
-  width: 60%;
+  height: 150px;
   margin: 0 auto;
+}
+
+.page-content {
+  text-align: center;
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 0;
+  padding-top: 5%;
 }
 
 {% include _css/beta.css %}
@@ -41,5 +50,7 @@ a {
 {% include _css/footer.css %}
 
 {% include _css/blogpage.css %}
+
+{% include _css/archive.css %}
 
 {% include _css/defaultpage.css %}
