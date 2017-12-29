@@ -98,6 +98,10 @@ p.replyContent {
   padding-left: 5%;
 }
 
+h3.postComment {
+  padding-top: 5%;
+}
+
 #email-invalid {
   color: red;
 }

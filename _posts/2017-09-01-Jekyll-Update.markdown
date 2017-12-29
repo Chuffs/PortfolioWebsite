@@ -2,7 +2,8 @@
 layout: blog_post
 title:  "Jekyll Site Update"
 date:   2017-09-31
-categories: ['blog', 'site-update', 'jekyll']
+categories: ['site-update']
+tags: ['Jekyll']
 ---
 
 The site is now using Jekyll!

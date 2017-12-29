@@ -1,0 +1,66 @@
+<html>
+
+  {% include head.html %}
+
+  <title>{{ page.title }} | micromatt.tech</title>
+
+  <body>
+
+    {% gtm body %}
+
+    {% include navbar.html %}
+
+    <div class="page-content">
+      <h1>Blog</h1>
+      <p>Most recent posts on micromatt.tech</p>
+      <p>If you wish to see all blog posts, please visit the
+        <a href="{{ site.url }}/blog/archive/" class="blog-links">archive.</a>
+      </p>
+
+      <hr>
+
+      {% assign allPosts = site.posts | sort: 'date' | reverse %}
+      {% for post in allPosts limit: 10 %}
+        <span class="blogTitle"><h3><a href="{{ post.url }}">{{ post.title }}</a></h3></span>
+        <span class="blogComments">
+          {% assign postComments = site.comments | where: "belongs_to", post.title %}
+          {% assign numComments = postComments | size %}
+
+          {{ numComments }} comments
+        </span>
+        <span class="blogComments">
+          ...
+        </span>
+        <div class="blogContentOuter">
+          {{ post.content }}
+        </div>
+        {% include blogShare.html %}
+      {% endfor %}
+
+      {% assign numPosts = 0 %}
+      {% for item in site.posts %}
+        {% unless item.published == false %}
+          {% assign numPosts = numPosts | plus: 1%}
+        {% endunless %}
+      {% endfor %}
+
+      <p class="totalPosts">There are {{ numPosts }} posts on the micromatt blog, only
+        {% if numPosts < 10 %}
+          {{ numPosts }}
+        {% elsif  numPosts >= 10 %}
+          10
+        {% endif %}
+          are shown here.
+      </p>
+      <p> Vist the
+        <a href="{{ site.url }}/blog/archive/" class="blog-links"> Blog Archive </a> for more.
+      </p>
+
+    </div>
+
+    {% include social-media-highlight.html %}
+
+    {% include footer.html %}
+
+  </body>
+</html>

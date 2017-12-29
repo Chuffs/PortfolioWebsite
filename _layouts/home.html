@@ -1,14 +1,15 @@
 <html>
+  <head>
 
-  {% include head.html %}
+    {% include head.html %}
 
-  {% include _js/logoimage.js %}
-  {% include _js/word-cloud.js %}
-  {% include _js/blog-port-icon.js %}
+    {% include _js/logoimage.js %}
+    {% include _js/word-cloud.js %}
+    {% include _js/blog-port-icon.js %}
 
-  <title> Home | micromatt.tech </title>
-
-    <body onload="checkOverlayCookie()">
+    <title> Home | micromatt.tech </title>
+  </head>
+  <body onload="checkOverlayCookie()">
       {% gtm body %}
       {% include beta-overlay.html %}
     <div>
@@ -18,13 +19,13 @@
 
         <div class="hero-image" id="hero-image">
           <div>
-            <p class="logo-span"><img src="{{ site.url }}/assets/circlelogo.png" id="logo-image"></p>
+            <p class="logo-span"><img src="{{ site.url }}/assets/circlelogo.png" id="logo-image" alt="micromatt.tech logo"></p>
           </div>
         </div>
 
         <div>
           <div class="span-blue" id="span">
-            <p class="wordcloud"><img src="{{ site.url }}/assets/Word Cloud.png" id="word-cloud"></p>
+            <p class="wordcloud"><img src="{{ site.url }}/assets/Word Cloud.png" id="word-cloud" alt="Hi! I'm Matt, and welcome to my site"></p>
           </div>
         </div>
 
@@ -32,10 +33,10 @@
             <div class="span-grey-div">
               <p class="link-span">
                 <a href="{{ site.url }}/projects/">
-                  <img src="{{ site.url }}/assets/portfolio-icon.png" class="span-grey-img">
+                  <img src="{{ site.url }}/assets/portfolio-icon.png" class="span-grey-img" alt="This site contains my portfolio">
                 </a>
                 <a href="{{ site.url }}/blog/">
-                  <img src="{{ site.url }}/assets/blog-icon.png" class="span-grey-img">
+                  <img src="{{ site.url }}/assets/blog-icon.png" class="span-grey-img" alt="This site contains my blog">
                 </a>
               </p>
             </div>
@@ -66,5 +67,5 @@
       {% include footer.html %}
 
     </div>
-    </body>
-  </html>
+  </body>
+</html>

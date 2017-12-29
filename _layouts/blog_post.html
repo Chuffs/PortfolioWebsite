@@ -1,5 +1,5 @@
 <html>
-  <title> {{ page.title }} </title>
+  <title>{{ page.title }} | micromatt.tech </title>
 
   {% include head.html %}
 
@@ -33,11 +33,13 @@
           <a class="next" href="{{page.next.url}}">Next Post &raquo;</a>
       </div>
 
+      {% include blogShare.html %}
+
       <hr>
 
       {% include commentsSection.html %}
 
-      <div class="google-ads test">
+      <div class="google-ads">
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <ins class="adsbygoogle"
              style="display:block; text-align:center;"

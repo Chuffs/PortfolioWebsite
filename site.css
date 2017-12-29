@@ -51,6 +51,19 @@ a {
 
 {% include _css/blogpage.css %}
 
+{% include _css/blog.css %}
 {% include _css/archive.css %}
+
+div.blogShare {
+  width: 30%;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+i.blogShare {
+  padding: 0;
+  padding-top: 25px;
+  margin: 0;
+}
 
 {% include _css/defaultpage.css %}

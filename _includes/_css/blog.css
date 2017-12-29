@@ -1,0 +1,19 @@
+span.blogTitle {
+  display: block;
+}
+
+span.blogComments {
+  display: block;
+}
+
+div.blogContentOuter {
+  width: 90%;
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+p.totalPosts {
+  padding-top: 50px;
+}

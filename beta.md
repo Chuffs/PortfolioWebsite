@@ -10,11 +10,13 @@ Current TO-DO List:
 - ~~Better looking home page~~
 - ~~Footer~~
 - ~~Blog Post "Read More" Page~~
-- Privacy Policy
+- SEO Optimization
+- post descriptions
 - Other pages
   - About Page
   - Contact Page
   - ~~Archive Page~~
+    - Restyle archive & blog pages
   - Projects/Portfolio Page
 
 

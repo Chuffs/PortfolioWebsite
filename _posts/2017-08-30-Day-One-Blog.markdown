@@ -2,7 +2,8 @@
 layout: blog_post
 title:  "Welcome to MicroMatt.tech!"
 date:   2017-08-30
-categories: ['blog', 'site-update', 'self-post']
+categories: ['site-update', 'self-post']
+tags: ['welcome', 'day one']
 ---
 
 Welcome to the MicroMatt blog, the blog and project portfolio for micromatt.tech and MicroMatt on YouTube. I plan to update this blog once every week or so with what is going on with certain projects and with the website itself.

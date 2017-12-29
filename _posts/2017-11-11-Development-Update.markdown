@@ -2,7 +2,7 @@
 layout: blog_post
 title:  "Development Update"
 date:   2017-11-11
-categories: ['blog', 'site-update', 'self-post']
+categories: ['site-update', 'self-post']
 ---
 
 The past few weeks have been absolutely hectic.

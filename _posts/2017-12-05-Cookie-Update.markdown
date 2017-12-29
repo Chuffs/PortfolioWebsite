@@ -2,7 +2,7 @@
 layout: blog_post
 title:  "Cookie Update"
 date:   2017-12-05
-categories: ['blog', 'site-update']
+categories: ['site-update']
 ---
 
 A small update on the website side of things - We are now using cookies to hide or display the "beta overlay" popup that appears in the bottom right side of the homepage, so that returning visitors don't continue to see it after they have hit the little 'x'. You can still see the To-Do list by visiting: [micromatt.tech/beta/](/beta/){:target="_blank" class="blog-links"}.

@@ -2,7 +2,8 @@
 layout: blog_post
 title:  "Comments are now live!"
 date:   2017-12-18
-categories: ['blog', 'site-update', 'jekyll', 'liquid']
+categories: ['site-update']
+tags: ['jekyll', 'liquid']
 ---
 
 Over the past few days I have been working on tweaking the look and feel of the entire blog page. I have attempted to go for a minimalist and clean design that is easy to read on all formats, from mobile to desktop - please let me know if there any issues with the styling of the website on certain platforms.
