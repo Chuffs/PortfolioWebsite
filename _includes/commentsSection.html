@@ -34,11 +34,6 @@
         {{ comments.content }}
       </p>
 
-      <p class="commentPermalink">
-        <a href="{{ comments.url }}"> permalink </a>
-      </p>
-
-
       {% assign commentReply = site.comments | where: "postID", comments.id | sort: time %}
 
       <div class="commentReplys">

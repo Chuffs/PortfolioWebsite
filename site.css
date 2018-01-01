@@ -60,6 +60,16 @@ div.blogShare {
   padding-bottom: 25px;
 }
 
+div.blogShare {
+  display: inline;
+}
+
+div.blogShareInner {
+  width: 30%;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
 i.blogShare {
   padding: 0;
   padding-top: 25px;

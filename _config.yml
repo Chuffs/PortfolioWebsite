@@ -32,7 +32,10 @@ show_drafts: false
 # collections
 collections:
   comments:
+    output: false
+  projects:
     output: true
+    permalink:
 
 #custom variables
 youtube: "https://www.youtube.com/channel/UCsjYwlaeT48XV7kxRLkE6bw"

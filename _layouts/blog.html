@@ -25,8 +25,17 @@
         <span class="blogComments">
           {% assign postComments = site.comments | where: "belongs_to", post.title %}
           {% assign numComments = postComments | size %}
+          {% assign d = post.date | date: "%-d" %}
+          {{ post.date | date: "%B" }}
+          {% case d %}
+            {% when '1' or '21' or '31' %}{{ d }}st
+            {% when '2' or '22' %}{{ d }}nd
+            {% when '3' or '23' %}{{ d }}rd
+            {% else %}{{ d }}th
+          {% endcase %}
+          {{ post.date | date: "%Y" }}
 
-          {{ numComments }} comments
+           | {{ numComments }} comments
         </span>
         <span class="blogComments">
           ...
@@ -35,6 +44,7 @@
           {{ post.content }}
         </div>
         {% include blogShare.html %}
+        <hr>
       {% endfor %}
 
       {% assign numPosts = 0 %}

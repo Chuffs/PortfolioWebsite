@@ -78,13 +78,6 @@ p.commentContent {
   padding-left: 5%;
 }
 
-p.commentPermalink {
-  padding-left: 5%;
-  text-align: right;
-  padding-top: -50px;
-  font-size: 0.75em;
-}
-
 div.commentReplys {
   margin-left: 5%;
   border-left: 1px solid black;
