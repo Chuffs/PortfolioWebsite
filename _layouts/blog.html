@@ -21,7 +21,7 @@
 
       {% assign allPosts = site.posts | sort: 'date' | reverse %}
       {% for post in allPosts limit: 10 %}
-        <span class="blogTitle"><h3><a href="{{ post.url }}">{{ post.title }}</a></h3></span>
+        <span class="blogTitle"><h2><a href="{{ post.url }}">{{ post.title }}</a></h2></span>
         <span class="blogComments">
           {% assign postComments = site.comments | where: "belongs_to", post.title %}
           {% assign numComments = postComments | size %}

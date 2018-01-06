@@ -1,0 +1,12 @@
+div.contactContent {
+  text-align: center;
+}
+
+a.contactEmail {
+  font-style: italic;
+  color: #{{ site.micromatt-blue }}
+}
+
+a.contactEmail:hover {
+  font-weight: bold;
+}

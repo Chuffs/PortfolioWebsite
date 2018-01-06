@@ -54,9 +54,10 @@
           </div>
           <div class="all-posts">
             <h1 class="all-posts"><a href="{{ site.url }}/archive/">All Posts: </a></h1>
-            {% for post in site.posts limit:5 offset:1 %}
-              <h3 class="all-posts"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            {% endfor %}
+              {% for post in site.posts limit:5 offset:1 %}
+                <h3 class="all-posts"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                {% endfor %}
+              <hr>
               <h3 class="all-posts"><a href="{{ site.url }}/archive/">Post Archive</a></h3>
           </div>
         </div>

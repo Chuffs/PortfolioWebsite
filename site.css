@@ -54,7 +54,9 @@ a {
 {% include _css/blog.css %}
 {% include _css/archive.css %}
 
-div.blogShare {
+{% include _css/contact.css %}
+
+div.blogShare {x
   width: 30%;
   margin: 0 auto;
   padding-bottom: 25px;
