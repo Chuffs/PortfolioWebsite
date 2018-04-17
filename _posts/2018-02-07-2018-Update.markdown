@@ -1,0 +1,15 @@
+---
+layout: blog_post
+title: "2018 Update"
+date: 2018-02-07
+categories: ['site-update', 'self-post']
+tags:
+---
+
+Well it’s pretty far into the start of 2018, and it has been off to a hectic start. I spent the first 2 weeks of 2018 in the UK, visiting family and friends and so I didn’t really get chance to update much of the blog and/or website. I did, however, manage to fix the contact page from acting weird - damn closing tags!
+
+The next 2 weeks I spent moving in with a few friends, sifting through footage that I took on my trip and settling back into work. Over the next month I plan to start studying again, finish building the website and start some of the projects that I have planned - most likely starting on the “How I built this website” part of my portfolio.
+
+Just thought I would check in - I guess I should get back to work, Peace for now
+
+Matt

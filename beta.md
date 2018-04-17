@@ -9,7 +9,7 @@ Current TO-DO List:
 - Post Descriptions
 - Other pages
   - About Page
-  - Contact Page
+  - ~~Contact Page~~
   - ~~Archive Page~~
     - ~~Restyle archive & blog pages~~
   - Projects/Portfolio Page

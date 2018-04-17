@@ -1,3 +1,4 @@
+<! DOCTYPE html>
 <html>
 
   {% include head.html %}
@@ -10,8 +11,10 @@
 
     {% include navbar.html %}
 
-    <div class="page-contents">
-      {{ page.content }}
+    <div class="page-content">
+      <div class="inner-content">
+        {{ page.content }}
+      </div>
     </div>
 
     {% include social-media-highlight.html %}

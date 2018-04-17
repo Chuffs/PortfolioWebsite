@@ -1,0 +1,25 @@
+<! DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% gtm body %}
+
+    {% include navbar.html %}
+
+    <div class="page-content">
+      {% assign projects = site.projects | where: "introPage", true %}
+      {% assign numProjects = projects | size %}
+      {{ numProjects }}
+
+      {% for page in projects %}
+        <a href="{{ site.url }}{{ page.url }}">{{ page.projectName }}</a>
+      {% endfor %}
+
+    </div>
+    {% include social-media-highlight.html %}
+
+    {% include footer.html %}
+  </body>
+</html>

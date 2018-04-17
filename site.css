@@ -42,6 +42,14 @@ a {
   padding-top: 5%;
 }
 
+.inner-content {
+  width: 90%;
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
 {% include _css/beta.css %}
 
 {% include _css/navbar.css %}

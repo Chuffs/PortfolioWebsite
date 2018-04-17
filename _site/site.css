@@ -38,6 +38,14 @@ a {
   padding-top: 5%;
 }
 
+.inner-content {
+  width: 90%;
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
 div.overlay {
   padding-left: 15px;
   padding-right: 15px;
@@ -550,8 +558,8 @@ span.commentShow {
 }
 
 
-div.contactContent {
-  text-align: center;
+div.contactParagraph {
+  padding-bottom: 25px;
 }
 
 a.contactEmail {
@@ -561,6 +569,11 @@ a.contactEmail {
 
 a.contactEmail:hover {
   font-weight: bold;
+}
+
+div.contactForm {
+  text-align: center;
+  margin: 0 auto;
 }
 
 

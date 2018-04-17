@@ -1,5 +1,5 @@
-div.contactContent {
-  text-align: center;
+div.contactParagraph {
+  padding-bottom: 25px;
 }
 
 a.contactEmail {
@@ -9,4 +9,9 @@ a.contactEmail {
 
 a.contactEmail:hover {
   font-weight: bold;
+}
+
+div.contactForm {
+  text-align: center;
+  margin: 0 auto;
 }
