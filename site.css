@@ -64,6 +64,8 @@ a {
 
 {% include _css/contact.css %}
 
+{% include _css/projects.css %}
+
 div.blogShare {x
   width: 30%;
   margin: 0 auto;

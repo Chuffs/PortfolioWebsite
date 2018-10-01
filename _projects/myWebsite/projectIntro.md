@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: projectsintro
 introPage: true
 projectName: myWebsite
-title: Project Intro
+title: The micromatt Website
+description: In this project portfolio I detail how I went about creating my website using Jekyll & GitHub Pages, in the hopes that my struggles help someone create their own with a little more ease.
 ---
 
 Writing your own website gives you full control over the design and content of your site, it can also be an amazing learning opportunity to learn how webpages are coded and the technologies that go into making them.

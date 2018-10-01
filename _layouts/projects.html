@@ -9,13 +9,22 @@
     {% include navbar.html %}
 
     <div class="page-content">
+      <h1> micromatt Projects Page </h1>
+
       {% assign projects = site.projects | where: "introPage", true %}
       {% assign numProjects = projects | size %}
-      {{ numProjects }}
+
+      <p> These are all the projects that I have either completed or are in progres, there are {{ numProjects }}</p>
 
       {% for page in projects %}
-        <a href="{{ site.url }}{{ page.url }}">{{ page.projectName }}</a>
+        <div class="project">
+          <a target="_blank" href="{{ site.url }}{{ page.url }}">
+            <img src="{{ site.url }}/assets/projects/{{ page.projectName }}.jpg" width="400" height="300">
+          </a>
+          <div class="desc">{{ page.description }}</div>
+        </div>
       {% endfor %}
+
 
     </div>
     {% include social-media-highlight.html %}

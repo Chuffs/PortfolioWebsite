@@ -577,6 +577,17 @@ div.contactForm {
 }
 
 
+div.project {
+
+}
+
+div.desc {
+  width: 350px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
 div.blogShare {x
   width: 30%;
   margin: 0 auto;

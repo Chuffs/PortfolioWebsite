@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: projectsintro
 introPage: false
 projectName: myWebsite
 title: Setup

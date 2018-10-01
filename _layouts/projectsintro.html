@@ -1,21 +1,22 @@
 <! DOCTYPE html>
 <html>
+  <head>
+    <title> {{ page.title }} | micromatt.tech</title>
 
-  {% include head.html %}
+    {% include head.html %}
 
-  <title> {{ page.title }} | micromatt.tech</title>
-
+  </head>
   <body>
 
     {% gtm body %}
-
     {% include navbar.html %}
 
     <div class="page-content">
+      <h1 class="blog-title"> {{ page.title }} </h1>
       <div class="inner-content">
-        {{ page.title }}
 
         {{ page.content }}
+
       </div>
     </div>
 
