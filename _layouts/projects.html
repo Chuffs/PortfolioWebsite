@@ -14,7 +14,7 @@
       {% assign projects = site.projects | where: "introPage", true %}
       {% assign numProjects = projects | size %}
 
-      <p> These are all the projects that I have either completed or are in progres, there are {{ numProjects }}</p>
+      <p> These are all the projects that I have either completed or are in progress, there are {{ numProjects }}</p>
 
       {% for page in projects %}
         <div class="project">

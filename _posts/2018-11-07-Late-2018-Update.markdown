@@ -1,0 +1,26 @@
+---
+layout: blog_post
+title:  "Late 2018 Update"
+date:   2018-11-07
+categories: ['site-update', 'self-post']
+---
+
+February the 7th 2018... That was the last time I updated this blog and site. To say that 2018 was a busy year for me is an understatement, many of my projects that I had planned (and even started) had to be put on the back burners which, unfortunately, included this website.
+
+Throughout the year, my mind has not stopped thinking of different projects that I could do and how I would go about doing them. In March this year I haphazardly threw together an UnRaid server to act as Network Attached Storage and to provide media across the network. That PC has been sat on the desk collecting dust without a case since - I have a plan to create a DIY Server Rack and Case for this and the other server related projects around the house - including some smart home upgrades like a CCTV System and smart pool box.
+
+For now, I will be pouring most of my efforts into the website. University had finished for the year and therefore I have a lot more time on my hands. Once I am happy with the site - only some minor adjustments have to be made, I can start working on showing the code and the hurdles I went through when creating it - believe me there were a few!
+
+Some may have noticed that there has been a slight redesign with the home page. I felt that the old design wasn't professional enough and didn't reflect what I wanted to show with the design of the whole website.
+
+![old website design](/assets/blog/old_home.png)
+
+Above is the previous design of the home page. Beneath that it also had a blue span with images showing that the site included my portfolio and blog. I felt that the use of images here instead of text appeared unprofessional and decided to remove them completely. I feel that a site such as this is going to be viewed and shared as a portfolio and therefore vistors didn't need reminding that this was a portfolio website. You can see a snapshot of the new design below;
+
+![new website design](/assets/blog/new_home.png)
+
+Projects and about need fixing as they have a slight margin/padding error - they also need content!
+
+I'll try to do an update post at least once a week depending on what I get up to throughout the week, but for now that's all for now,
+
+Matt
