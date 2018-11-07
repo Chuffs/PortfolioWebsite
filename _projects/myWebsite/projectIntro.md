@@ -1,8 +1,9 @@
 ---
 layout: projectsintro
 introPage: true
-projectName: myWebsite
-title: The micromatt Website
+projectName: 'The micromatt Website'
+title: 'The micromatt Website'
+postnumber: 0
 description: In this project portfolio I detail how I went about creating my website using Jekyll & GitHub Pages, in the hopes that my struggles help someone create their own with a little more ease.
 ---
 
@@ -12,6 +13,7 @@ This site was built at the back end of 2017 and the start of 2018 and was a part
 
 Preface: This portfolio assumes some basic knowledge of HTML and CSS. If you wish to learn more about HTML and CSS I would recommend visiting [w3schools](https://www.w3schools.com/) - I find this resource incredibly useful, and second to none in terms of the amount of information, tips and examples on HTML, CSS, Javascript and other web coding languages.
 
+<!-- break -->
 ---
 
 Project Files -

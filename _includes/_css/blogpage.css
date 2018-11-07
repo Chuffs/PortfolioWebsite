@@ -1,5 +1,13 @@
 .blog-content {
-    margin-bottom: -400px;
+  padding-top: 125px;
+  padding-bottom: 200px;
+
+  max-width: 1100px;
+  width: auto;
+  
+  margin: 0 auto;
+
+  text-align: center;
 }
 
 .blog-title {
