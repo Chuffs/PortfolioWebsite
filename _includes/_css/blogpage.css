@@ -121,3 +121,10 @@ td.commentForm {
   padding-top: 10px;
   text-align: center;
 }
+
+span.caption {
+  display: block;
+  text-align: center;
+
+  font-style: italic;
+}
