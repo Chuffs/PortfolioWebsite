@@ -1,0 +1,29 @@
+---
+layout: blog_post
+title: "2019 Update"
+date: 2019-03-13
+categories: ['site-update', 'self-post']
+---
+
+Its been a couple months, and quite a lot has changed. I made the move interstate to more back in with my parents and have a change of both lifestyle and career, something that I have been wanting to do for while. I have taken a year off from uni in order to get my life back on track and work on improving other skills that I wasn't able to when working full time to afford accommodation. I hope that throughout 2019 I will be able to work on previous projects and start some new ones too.
+
+The projects that I would like to start (and finish) are;
+- Micromatt Website (How I made this website, in an attempt to help others who are striving to achieve the same)
+- Home server(s), setting up of Unraid and building my own server rack and sever case and accessories.
+- A Raspberry Pi based PiHole Server - looking at using the Raspberry Pi Zero
+- Raspberry Pi or Arduino based Weather Station
+- PIC Microcontroller projects, including set up of the chip on a breadboard, design of a PCB and Development Board as well as programming the device.
+- Digital Electronics
+- DIY 40% Keyboard.
+
+{% include image.html file="/assets/blog/raspi0.jpg" description="The Raspberry Pi Zero, I plan to use for PiHole" %}
+
+The project that I plan to have done first, will most likely be the PiHole Server. I plan on using a Raspberry Pi Zero (The Pi without Wireless/Bluetooth or ethernet) and use a separate ethernet controller to give it internet connectivity - connected via SPI to the Pi's GPIO pins.
+
+Next, I really want to get the server rack and cases done, so that it can be displayed nicely and not just as a "test bench" on the top of a cupboard - as it is at the moment.
+
+{% include image.html file="/assets/blog/Unraid_Sever_Early_2019.jpg" description="The mighty Unraid Server, perched upon a cupboard.." %}
+
+I will update this blog when I have made significant progress in one or more of the projects that I have outlined above, that's all I have for now,
+
+Matt
