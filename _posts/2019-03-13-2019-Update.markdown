@@ -16,7 +16,7 @@ The projects that I would like to start (and finish) are;
 - Digital Electronics
 - DIY 40% Keyboard.
 
-{% include image.html file="/assets/blog/raspi0.jpg" description="The Raspberry Pi Zero, I plan to use for PiHole" %}
+{% include image.html file="/assets/blog/Raspi0.jpg" description="The Raspberry Pi Zero, I plan to use for PiHole" %}
 
 The project that I plan to have done first, will most likely be the PiHole Server. I plan on using a Raspberry Pi Zero (The Pi without Wireless/Bluetooth or ethernet) and use a separate ethernet controller to give it internet connectivity - connected via SPI to the Pi's GPIO pins.
 
