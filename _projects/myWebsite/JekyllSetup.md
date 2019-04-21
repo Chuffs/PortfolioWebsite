@@ -1,26 +1,18 @@
 ---
-layout: projectsintro
+layout: projectspost
 introPage: false
 projectName: 'The micromatt Website'
-title: 'Setup'
+title: 'Jekyll Setup'
 postnumber: 1
-description: In this lesson we'll look into how we can write a dynamic website and have static files produced, so we can host it as a simple website, on services such as Github Pages.
+description: In this post we will look at how the backbone of the website is created and the tools I use to code, test and implement the website.
+
+introPageURL: /projects/micromatt_website/intro/
+permalink: /projects/micromatt_website/L1_Jekyll_Setup/
 ---
+When I first made this website I created every single page individually and painstakingly tested each and every link and each and every margin/padding and design of the page. I started thinking to myself "This is going to become extremely hard once I add more than 10 blog entries to the site... There must be another way..." That's when I discovered [Jekyll](https://jekyllrb.com/){:target="_blank" class="blog-links"}.
 
-Writing your own website gives you full control over the design and content of your site, it can also be an amazing learning opportunity to learn how webpages are coded and the technologies that go into making them.
+Jekyll is a ruby gem program available on many linux distributions that allows you to make a dynamic website into static pages to be hosted on a simple webhoster such as Github Pages. Using this tool, you can create a website that has thousands of blog posts and not have to worry about writing each page separately.
 
-This site was built at the back end of 2017 and the start of 2018 and was a part time project of mine. I enjoyed the design aspect of crafting my own aesthetically pleasing site and learning the coding behind. This project portfolio will go through the design aspects and coding challenges that I faced when building this website, in the hopes that it will help others achieve similar results in the future.
+Installing Jekyll on a linux distribution is fairly straight forward, just make sure you have rubygems installed and up to date and follow the instructions found on the ([Jekyll Homepage](https://jekyllrb.com/){:target="_blank" class="blog-links"}).
 
-Preface: This portfolio assumes some basic knowledge of HTML and CSS. If you wish to learn more about HTML and CSS I would recommend visiting [w3schools](https://www.w3schools.com/) - I find this resource incredibly useful, and second to none in terms of the amount of information, tips and examples on HTML, CSS, Javascript and other web coding languages.
-
-<!-- break -->
----
-
-Project Files -
-
-{% assign project-files = site.projects | where: "introPage", false %}
-{% assign project-files = project-files | where: "projectName", page.projectName %}
-{% for page in project-files %}
-  - [{{ page.title }}]({{ page.url }})
-    - {{ page.description }}
-{% endfor %}
+On windows you have two options. Ruby can be used on windows via [Ruby Installer for Windows](https://rubyinstaller.org/){:target="_blank" class="blog-links"} and then used via PowerShell or CMD. Another way to run Jekyll on Windows is to use the Linux Subsystem for Windows - which if you have need for any other linux based tools, is a very useful addition to Windows 10. This is the method that I use regularly as my main driver is a Custom Built Desktop running Windows 10.

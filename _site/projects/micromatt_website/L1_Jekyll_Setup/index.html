@@ -1,7 +1,7 @@
 <! DOCTYPE html>
 <html>
   <head>
-    <title> The micromatt Website | micromatt.tech</title>
+    <title> Jekyll Setup | micromatt.tech</title>
 
     <!-- Begin Jekyll GTM tag v1.0.1 -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -19,33 +19,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- SEO -->
 <title>
   
-    The micromatt Website | micromatt.tech
+    Jekyll Setup | micromatt.tech
   
 </title>
 
 <meta itemprop="description" name="description" content="
   
-    In this project portfolio I detail how I went about creating my website using Jekyll & GitHub Pages, in the hopes that my struggles help someone create their...
+    In this post we will look at how the backbone of the website is created and the tools I use to code, test and implement the website.
   " />
 
 <meta property="og:title" content="
   
-    The micromatt Website | micromatt.tech
+    Jekyll Setup | micromatt.tech
   " />
 
 <meta property="og:locale" content="en_AU" />
 <meta proterty="og:description" content="
   
-    In this project portfolio I detail how I went about creating my website using Jekyll & GitHub Pages, in the hopes that my struggles help someone create their...
+    In this post we will look at how the backbone of the website is created and the tools I use to code, test and implement the website.
   "/>
-<meta property="og:url" content="http://micromatt.tech/projects/myWebsite/projectIntro/"/>
+<meta property="og:url" content="http://micromatt.tech/projects/micromatt_website/L1_Jekyll_Setup/"/>
 <meta property="og:site_name" content="micromatt.tech"/>
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@chuffs97" />
 <meta name="twitter:creator" content="@chuffs97" />
 
-<link rel="canonical" href="http://micromatt.tech/projects/myWebsite/projectIntro/">
+<link rel="canonical" href="http://micromatt.tech/projects/micromatt_website/L1_Jekyll_Setup/">
 
 <!-- Script for Adobe Typekit -->
 <script src="https://use.typekit.net/pob8zuk.js"></script>
@@ -117,32 +117,92 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 
-    <div class="page-content">
-      <h1 class="blog-title"> The micromatt Website </h1>
+    <div class="page-content project">
+      <h1 class="blog-title">Jekyll Setup</h1>
+
       <div class="inner-content">
+        &laquo; <a href="/projects/micromatt_website/intro/">Project Home</a> &raquo;
 
-        <p>Writing your own website gives you full control over the design and content of your site, it can also be an amazing learning opportunity to learn how webpages are coded and the technologies that go into making them.</p>
+        <p>When I first made this website I created every single page individually and painstakingly tested each and every link and each and every margin/padding and design of the page. I started thinking to myself “This is going to become extremely hard once I add more than 10 blog entries to the site… There must be another way…” That’s when I discovered <a href="https://jekyllrb.com/" target="_blank" class="blog-links">Jekyll</a>.</p>
 
-<p>This site was built at the back end of 2017 and the start of 2018 and was a part time project of mine. I enjoyed the design aspect of crafting my own aesthetically pleasing site and learning the coding behind. This project portfolio will go through the design aspects and coding challenges that I faced when building this website, in the hopes that it will help others achieve similar results in the future.</p>
+<p>Jekyll is a ruby gem program available on many linux distributions that allows you to make a dynamic website into static pages to be hosted on a simple webhoster such as Github Pages. Using this tool, you can create a website that has thousands of blog posts and not have to worry about writing each page separately.</p>
 
-<p>Preface: This portfolio assumes some basic knowledge of HTML and CSS. If you wish to learn more about HTML and CSS I would recommend visiting <a href="https://www.w3schools.com/">w3schools</a> - I find this resource incredibly useful, and second to none in terms of the amount of information, tips and examples on HTML, CSS, Javascript and other web coding languages.</p>
+<p>Installing Jekyll on a linux distribution is fairly straight forward, just make sure you have rubygems installed and up to date and follow the instructions found on the (<a href="https://jekyllrb.com/" target="_blank" class="blog-links">Jekyll Homepage</a>).</p>
 
-<!-- break -->
-<hr />
-
-<p>Project Files -</p>
-
-<ul>
-  <li><a href="/projects/myWebsite/JekyllSetup/">Setup</a>
-    <ul>
-      <li>In this lesson we’ll look into how we can write a dynamic website and have static files produced, so we can host it as a simple website, on services such as Github Pages.</li>
-    </ul>
-  </li>
-</ul>
-
-
+<p>On windows you have two options. Ruby can be used on windows via <a href="https://rubyinstaller.org/" target="_blank" class="blog-links">Ruby Installer for Windows</a> and then used via PowerShell or CMD. Another way to run Jekyll on Windows is to use the Linux Subsystem for Windows - which if you have need for any other linux based tools, is a very useful addition to Windows 10. This is the method that I use regularly as my main driver is a Custom Built Desktop running Windows 10.</p>
 
       </div>
+
+      <hr>
+
+      
+
+
+<div class="numComments">
+
+  <h2><u>Comments</u></h2>
+
+  
+    <p  class="noComments">No Comments found! Start the discussion below!</p>
+  
+
+</div>
+
+<div class="comments">
+  
+</div>
+
+<hr>
+
+<div class="sumbitComment">
+  <h3 class="postComment">Post a comment</h3>
+<p style="font-style: italic; font-size: 0.9em;">
+  All comments are held for moderation; basic HTML or Markdown formatting accepted.
+</p>
+
+  <form id="gform" method="POST" class="pure-form pure-form-stacked" class="comment"
+  action="https://script.google.com/macros/s/AKfycbyvRVcJjsme-GGnlHtVHTxnYu7AcR-IPVDQUUvraiSHZ98lUN8/exec">
+
+    <table class="comment">
+      <tr>
+        <th>Name:</th>
+        <td><input type="text" size="25" name="name" placeholder="John Smith"/> (required)</td>
+      </tr>
+      <tr>
+        <th>E-mail:</th>
+        <td><input type="text" size="25" name="email" placeholder="your.name@email.com"/> (required, not published)</td>
+        <span id="email-invalid" style="display:none; font-color: red;">Please enter a valid email address!</span>
+      </tr>
+      <tr>
+        <th>Please Select:</th>
+        <td>
+          <select name="Post ID">
+            <option value="Comment on Jekyll Setup">Submit New Comment</option>
+
+            
+          </select>
+          (hover for comment hint)
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><textarea name="message" rows="10" cols="60"></textarea></td>
+      </tr>
+      <tr>
+        <td class="commentForm"><input type="submit" name="submit" value="Submit Comment"/></td>
+      </tr>
+    </table>
+
+  </form>
+
+<!-- Customise the Thankyou Message People See when they submit the form: -->
+<div style="display:none;" id="thankyou_message">
+  <h2>Thank you for your comment! Your comment is queued for moderation.</h2>
+  <h4>If you wish to contact us, please use our <em><a href="/contact/">contact form</a></em> instead.<h4>
+</div>
+
+</div>
+
+
     </div>
 
     <div class="social-span">

@@ -18,7 +18,7 @@
 
       {% for page in projects %}
         <div class="project">
-          <a target="_blank" href="{{ site.url }}{{ page.url }}">
+          <a href="{{ site.url }}{{ page.url }}">
             <img src="{{ site.url }}/assets/projects/{{ page.projectName }}.jpg" width="400" height="300">
           </a>
           <div class="desc">{{ page.description }}</div>

@@ -14,7 +14,7 @@ The projects that I would like to start (and finish) are;
 - Raspberry Pi or Arduino based Weather Station
 - PIC Microcontroller projects, including set up of the chip on a breadboard, design of a PCB and Development Board as well as programming the device.
 - Digital Electronics
-- DIY 40% Keyboard.
+- DIY (40%) Keyboard.
 
 {% include image.html file="/assets/blog/Raspi0.jpg" description="The Raspberry Pi Zero, I plan to use for PiHole" %}
 

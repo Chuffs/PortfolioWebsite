@@ -12,12 +12,18 @@
     {% include navbar.html %}
 
     <div class="page-content project">
-      <h1 class="blog-title"> {{ page.title }} </h1>
+      <h1 class="blog-title">{{ page.title }}</h1>
+
       <div class="inner-content">
+        &laquo; <a href="{{page.introPageURL}}">Project Home</a> &raquo;
 
         {{ page.content }}
-
       </div>
+
+      <hr>
+
+      {% include commentsSection.html %}
+
     </div>
 
     {% include social-media-highlight.html %}
