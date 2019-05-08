@@ -1,0 +1,23 @@
+<! DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <title> {{ page.title }} | micromatt.tech</title>
+
+  <body class="404_container">
+
+    {% gtm body %}
+
+    {% include navbar.html %}
+
+    <div>
+      {{ page.content }}
+    </div>
+
+    {% include social-media-highlight.html %}
+
+    {% include footer.html %}
+
+  </body>
+</html>
