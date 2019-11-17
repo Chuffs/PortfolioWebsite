@@ -8,7 +8,7 @@
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-000000');</script>
+})(window,document,'script','dataLayer','GTM-WQS8N26');</script>
 <!-- End Jekyll GTM tag v1.0.1 -->
 
 
@@ -38,21 +38,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
     In this post we will look at how the backbone of the website is created and the tools I use to code, test and implement the website.
   "/>
-<meta property="og:url" content="http://localhost:4000/projects/micromatt_website/L1_Jekyll_Setup/"/>
+<meta property="og:url" content="http://micromatt.tech/projects/micromatt_website/L1_Jekyll_Setup/"/>
 <meta property="og:site_name" content="micromatt.tech"/>
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@chuffs97" />
 <meta name="twitter:creator" content="@chuffs97" />
 
-<link rel="canonical" href="http://localhost:4000/projects/micromatt_website/L1_Jekyll_Setup/">
+<link rel="canonical" href="http://micromatt.tech/projects/micromatt_website/L1_Jekyll_Setup/">
 
 <!-- Script for Adobe Typekit -->
 <script src="https://use.typekit.net/pob8zuk.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 <!-- Stylesheets for website -->
-<link rel = "stylesheet" type = "text/css" href = "http://localhost:4000/site.css">
+<link rel = "stylesheet" type = "text/css" href = "http://micromatt.tech/site.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
@@ -82,7 +82,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <body>
 
     <!-- Begin Jekyll GTM tag v1.0.1 -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-000000"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQS8N26"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Jekyll GTM tag v1.0.1 -->
 
@@ -92,27 +92,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- Website navigation -->
     <ul class="navbar">
       <div class="navbar-nav" id="navbar">
-        <li class="navbar"><a href="/"><img src="http://localhost:4000/assets/websitelogo.png" style="width: 10em" class="navbar-logo" alt="micromatt.tech logo" title="back to home"></a></li>
-        <li class="navbar"><a href="http://localhost:4000/blog/" class="navbar-item">Blog</a></li>
-        <li class="navbar"><a href="http://localhost:4000/projects/" class="navbar-item">Projects</a></li>
-        <li class="navbar"><a href="http://localhost:4000/about/" class="navbar-item">About</a></li>
-        <li class="navbar"><a href="http://localhost:4000/contact/" class="navbar-item">Contact</a></li>
+        <li class="navbar"><a href="/"><img src="http://micromatt.tech/assets/websitelogo.png" style="width: 10em" class="navbar-logo" alt="micromatt.tech logo" title="back to home"></a></li>
+        <li class="navbar"><a href="http://micromatt.tech/blog/" class="navbar-item">Blog</a></li>
+        <li class="navbar"><a href="http://micromatt.tech/projects/" class="navbar-item">Projects</a></li>
+        <li class="navbar"><a href="http://micromatt.tech/about/" class="navbar-item">About</a></li>
+        <li class="navbar"><a href="http://micromatt.tech/contact/" class="navbar-item">Contact</a></li>
         <li class="navbar"><a href="javascript:void(0);" style="font-size:25px;" class="navbar-toggle" onclick="navbarToggle()">&#9776;</a></li>
       </div>
     </ul>
 </div>
 <div class="link" id="mobile-nav">
   <div class="mobile-link">
-    <a href="http://localhost:4000/blog/">Blog</a>
+    <a href="http://micromatt.tech/blog/">Blog</a>
   </div>
   <div class="mobile-link">
-    <a href="http://localhost:4000/projects/">Projects</a>
+    <a href="http://micromatt.tech/projects/">Projects</a>
   </div>
   <div class="mobile-link">
-    <a href="http://localhost:4000/about/">About</a>
+    <a href="http://micromatt.tech/about/">About</a>
   </div>
   <div class="mobile-link">
-    <a href="http://localhost:4000/contact/">Contact</a>
+    <a href="http://micromatt.tech/contact/">Contact</a>
   </div>
 </div>
 
@@ -149,13 +149,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>Your <code class="highlighter-rouge">_config.yml</code> file can also be used to help the creation of other pages by taking advantage of custom variables. Variables created in your config file can be used globally, but the server must be restarted before they take effect as the config file is exempt from auto-regeneration. We will delve deeper into how and why we do this and further usage examples later.</p>
 
 <div style="text-align: center">
-  <img src="/assets/projects/config_yml_snippet_001.png" alt="Some of the custom variables set for micromatt.tech" />
+  <img src="/assets/projects/config_snippet_001.png" alt="Some of the custom variables set for micromatt.tech" />
   <span class="caption">Some of the custom variables set for micromatt.tech</span>
 </div>
 
 <p>One issue that I came across when creating The Micromatt Website was differences in the url of pages and content that didn’t coincide, both when the files had been hosted on GitHub Pages as well as locally hosted. This was because Jekyll was using the baseurl and url defined in my <code class="highlighter-rouge">_config.yml</code> and that did not match with the location of the files hosted on localhost (and vice versa). The way around this was to define a second config file that was used in development, and use overlapping variables. To overcome this I created a second config file named <code class="highlighter-rouge">_config_dev.yml</code> and used the argument <code class="highlighter-rouge">--config</code> when starting the server locally.</p>
 
-<p>I still use <em><strong><code class="highlighter-rouge">bundle jekyll build</code></strong></em> to produce the static files to upload to GitHub Pages, but now use <em><strong><code class="highlighter-rouge">bundle exec jekyl serve --config '_config.yml,_config_dev.yml'</code></strong></em> when I want to test the site locally and make changes to it.</p>
+<p>I still use <em><strong><code class="highlighter-rouge">bundle exec jekyll build</code></strong></em> to produce the static files to upload to GitHub Pages, but now use <em><strong><code class="highlighter-rouge">bundle exec jekyl serve --config '_config.yml,_config_dev.yml'</code></strong></em> when I want to test the site locally and make changes to it.</p>
 
 <p>I hope that this first lesson has been useful and helpful to those of you who would like to try their hand at making their own website (without tools such as Squarespace or other ‘Drag and Drop’ website creators). If you have any issues, feel free to post a comment below and I’ll do my best to help you out.</p>
 
@@ -249,7 +249,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <div class="footer">
-  <p>&copy;2019 micromatt.tech | <a href="http://localhost:4000/privacypolicy.htm">Privacy Policy</a> | <a href="http://localhost:4000/contact/">Contact Me</a>
+  <p>&copy;2019 micromatt.tech | <a href="http://micromatt.tech/privacypolicy.htm">Privacy Policy</a> | <a href="http://micromatt.tech/contact/">Contact Me</a>
 </div>
 
 

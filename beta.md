@@ -13,6 +13,7 @@ Current TO-DO List:
   - ~~Archive Page~~
     - ~~Restyle archive & blog pages~~
   - Projects/Portfolio Page
+  - Modify for mobile size (smaller than 900px wide screens)
 
 DONE:
 - ~~Mobile Navigation~~

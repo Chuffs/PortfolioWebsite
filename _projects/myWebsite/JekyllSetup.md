@@ -33,11 +33,11 @@ To get your new site ready for static web hosting, there are a few variables tha
 ### Advanced Section
 Your `_config.yml` file can also be used to help the creation of other pages by taking advantage of custom variables. Variables created in your config file can be used globally, but the server must be restarted before they take effect as the config file is exempt from auto-regeneration. We will delve deeper into how and why we do this and further usage examples later.
 
-{% include image.html file="/assets/projects/config_yml_snippet_001.png" description="Some of the custom variables set for micromatt.tech" %}
+{% include image.html file="/assets/projects/config_snippet_001.png" description="Some of the custom variables set for micromatt.tech" %}
 
 One issue that I came across when creating The Micromatt Website was differences in the url of pages and content that didn't coincide, both when the files had been hosted on GitHub Pages as well as locally hosted. This was because Jekyll was using the baseurl and url defined in my `_config.yml` and that did not match with the location of the files hosted on localhost (and vice versa). The way around this was to define a second config file that was used in development, and use overlapping variables. To overcome this I created a second config file named `_config_dev.yml` and used the argument `--config` when starting the server locally.
 
-I still use _**`bundle jekyll build`**_ to produce the static files to upload to GitHub Pages, but now use _**`bundle exec jekyl serve --config '_config.yml,_config_dev.yml'`**_ when I want to test the site locally and make changes to it.
+I still use _**`bundle exec jekyll build`**_ to produce the static files to upload to GitHub Pages, but now use _**`bundle exec jekyl serve --config '_config.yml,_config_dev.yml'`**_ when I want to test the site locally and make changes to it.
 
 I hope that this first lesson has been useful and helpful to those of you who would like to try their hand at making their own website (without tools such as Squarespace or other 'Drag and Drop' website creators). If you have any issues, feel free to post a comment below and I'll do my best to help you out.
 
