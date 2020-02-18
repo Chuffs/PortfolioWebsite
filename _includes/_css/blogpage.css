@@ -1,14 +1,4 @@
-@media screen and (min-width : 621px) {
-  .blog-content {
-    padding-top: 125px;
-  }
-}
 
-@media screen and (max-width : 620px) {
-  .blog-content {
-    padding-top: 30px;
-  }
-}
 
 .blog-content {
   padding-bottom: 200px;
