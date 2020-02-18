@@ -93,3 +93,8 @@
     color: black;
     background: #649cb4;
   }
+
+/* Make <a> Clickable */
+a.navbar-mobile {
+  display: block;
+}

@@ -44,6 +44,7 @@ a {
 
 .inner-content {
   width: 90%;
+  min-height: 50%;
   max-width: 880px;
   margin: 0 auto;
   text-align: left;
@@ -65,6 +66,7 @@ a {
 {% include _css/contact.css %}
 
 {% include _css/projects.css %}
+{% include _css/image.css %}
 
 div.blogShare {x
   width: 30%;
