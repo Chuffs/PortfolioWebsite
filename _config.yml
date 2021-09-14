@@ -1,10 +1,10 @@
 # Use 'bundle exec jekyll build' to create files for github
 # Use 'bundle exec jekyll serve --config _config.yml, _config_dev.yml'
-title: micromatt.tech
-email: matt@micromatt.tech
+title: mljl.tech
+email: matt@mljl.tech
 description: The Blog & Portfolio of Matthew Law.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://micromatt.tech" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://mljl.tech" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /blog/:categories/:year-:month-:day/:title/
 twitter:
   username: chuffs97
@@ -41,7 +41,7 @@ youtube: "https://www.youtube.com/channel/UCsjYwlaeT48XV7kxRLkE6bw"
 github: "https://github.com/Chuffs"
 twitter: "https://twitter.com/chuffs97"
 
-name: micromatt.tech
+name: mljl.tech
 
 micromatt-green: 6ac68f
 micromatt-blue: 649cb4

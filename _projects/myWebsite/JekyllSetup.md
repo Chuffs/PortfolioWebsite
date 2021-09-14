@@ -1,13 +1,13 @@
 ---
 layout: projectspost
 introPage: false
-projectName: 'The micromatt Website'
+projectName: 'My Online Portfolio & Blog'
 title: 'Jekyll Setup'
 postnumber: 1
 description: In this post we will look at how the backbone of the website is created and the tools I use to code, test and implement the website.
 
-introPageURL: /projects/micromatt_website/intro/
-permalink: /projects/micromatt_website/L1_Jekyll_Setup/
+introPageURL: /projects/MLJL/intro/
+permalink: /projects/MLJL/L1_Jekyll_Setup/
 ---
 
 
@@ -27,15 +27,15 @@ If the last command is successful, you should get the following result;
 
 Now you can navigate to _**`localhost:4000`**_ in your web browser to view your newly created website.
 
-To get your new site ready for static web hosting, there are a few variables that need to be changed in the _config.yml file - mainly the baseurl and url variables. These variables tell jekyll the url of your site (e.g., "http://micromatt.tech") and the baseurl of your site (e.g., "/blog" in "http://micromatt.tech/blog"), all the other variables may be filled in or left as they are.
+To get your new site ready for static web hosting, there are a few variables that need to be changed in the _config.yml file - mainly the baseurl and url variables. These variables tell jekyll the url of your site (e.g., "http://mljl.tech") and the baseurl of your site (e.g., "/blog" in "http://mljl.tech/blog"), all the other variables may be filled in or left as they are.
 
 ---
 ### Advanced Section
 Your `_config.yml` file can also be used to help the creation of other pages by taking advantage of custom variables. Variables created in your config file can be used globally, but the server must be restarted before they take effect as the config file is exempt from auto-regeneration. We will delve deeper into how and why we do this and further usage examples later.
 
-{% include image.html file="/assets/projects/config_snippet_001.png" description="Some of the custom variables set for micromatt.tech" %}
+{% include image.html file="/assets/projects/config_snippet_001.png" description="Some of the custom variables set for mljl.tech" %}
 
-One issue that I came across when creating The Micromatt Website was differences in the url of pages and content that didn't coincide, both when the files had been hosted on GitHub Pages as well as locally hosted. This was because Jekyll was using the baseurl and url defined in my `_config.yml` and that did not match with the location of the files hosted on localhost (and vice versa). The way around this was to define a second config file that was used in development, and use overlapping variables. To overcome this I created a second config file named `_config_dev.yml` and used the argument `--config` when starting the server locally.
+One issue that I came across when creating this website was differences in the url of pages and content that didn't coincide, both when the files had been hosted on GitHub Pages as well as locally hosted. This was because Jekyll was using the baseurl and url defined in my `_config.yml` and that did not match with the location of the files hosted on localhost (and vice versa). The way around this was to define a second config file that was used in development, and use overlapping variables. To overcome this I created a second config file named `_config_dev.yml` and used the argument `--config` when starting the server locally.
 
 I still use _**`bundle exec jekyll build`**_ to produce the static files to upload to GitHub Pages, but now use _**`bundle exec jekyl serve --config '_config.yml,_config_dev.yml'`**_ when I want to test the site locally and make changes to it.
 
