@@ -4,7 +4,7 @@ title: mljl.tech
 email: matt@mljl.tech
 description: The Blog & Portfolio of Matthew Law.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://mljl.tech" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mljl.tech" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /blog/:categories/:year-:month-:day/:title/
 twitter:
   username: chuffs97
