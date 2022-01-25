@@ -1,12 +1,12 @@
 ---
 layout: projectsintro
 introPage: true
-projectName: 'The micromatt Website'
+projectName: 'My Website'
 title: 'The micromatt Website'
 postnumber: 0
 description: In this project portfolio I detail how I went about creating my website using Jekyll & GitHub Pages, in the hopes that my struggles help someone create their own with a little more ease.
 
-permalink: /projects/micromatt_website/intro/
+permalink: /projects/My_Website/intro/
 ---
 
 Writing your own website gives you full control over the design and content of your site, it can also be an amazing learning opportunity to learn how webpages are coded and the technologies that go into making them.

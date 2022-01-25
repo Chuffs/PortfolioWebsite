@@ -1,13 +1,13 @@
 ---
 layout: projectspost
 introPage: false
-projectName: 'My Online Portfolio & Blog'
+projectName: 'My Website'
 title: 'Jekyll Setup'
 postnumber: 1
 description: In this post we will look at how the backbone of the website is created and the tools I use to code, test and implement the website.
 
-introPageURL: /projects/MLJL/intro/
-permalink: /projects/MLJL/L1_Jekyll_Setup/
+introPageURL: /projects/My_Website/intro/
+permalink: /projects/My_Website/L1_Jekyll_Setup/
 ---
 
 
