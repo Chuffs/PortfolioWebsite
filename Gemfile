@@ -16,6 +16,10 @@ gem "minima", "~> 2.0"
 #Fix vunrability FFI
 gem "ffi", ">= 1.9.24"
 
+#Fix vunrability addressable - 01/02/2022
+gem "addressable", ">= 2.8.0"
+gem "kramdown", ">= 2.3.1"
+
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
