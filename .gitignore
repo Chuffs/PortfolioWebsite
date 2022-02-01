@@ -2,3 +2,4 @@
 .jekyll-metadata
 *.psd
 vendor/
+_site/
