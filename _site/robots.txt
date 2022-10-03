@@ -1,5 +1,0 @@
-Sitemap: http://mljl.tech/sitemap.xml
-
-User-Agent: *
-
-Disallow: /comments/*
