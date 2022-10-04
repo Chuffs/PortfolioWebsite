@@ -2,14 +2,30 @@
 <html>
   <head>
     {% include head.html %}
+
+    <script>
+      {% include _js/github-calendar.min.js %}
+    </script>
+
   </head>
   <body>
-    {% gtm body %}
 
     {% include navbar.html %}
 
     <div class="page-content">
-      <h1> My Projects Page </h1>
+      <h1> Projects </h1>
+
+      <div class="calendar">
+        Loading github contributions
+      </div>
+
+
+      <!-- Found from https://github.com/Bloggify/github-calendar -->
+      <script>
+        GitHubCalendar(".calendar", "Chuffs", { responsive: true, tooltips: true });
+      </script>
+
+      <h2> What I have been working on:</h2>
 
       {% assign projects = site.projects | where: "introPage", true %}
       {% assign numProjects = projects | size %}

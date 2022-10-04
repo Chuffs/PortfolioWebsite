@@ -12,11 +12,6 @@ logo: /assests/circlelogo.png
 github_username:  Chuffs
 future: true
 
-# Google Tag Manager
-google:
-  tag_manager:
-    container_id: GTM-WQS8N26
-
 # Build settings
 markdown: kramdown
 plugins:

@@ -1,0 +1,14 @@
+---
+layout: blog_post
+title: "2022 Update"
+date: 2019-03-13
+categories: ['site-update', 'self-post']
+---
+
+Covid SUCKED.
+
+- Changed domain host/registrar
+    - Got free SSL Cert
+- New Job (updated about me)
+- projects i've been working on
+    - Remote Power Outage Detector

@@ -1,14 +1,10 @@
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/sitedev" # the subpath of your site, e.g. /blog
+url: "http://dev.mljl.tech" # the base hostname & protocol for your site, e.g. http://example.com
 
 show_drafts: true
 
-host: localhost
+#host: localhost
 port: 4000
 
 sass:
   style: full
-
-google:
-  tag_manager:
-    container_id: GTM-000000

@@ -91,3 +91,5 @@ i.blogShare {
 }
 
 {% include _css/defaultpage.css %}
+
+{% include _css/github-calendar.css %}
