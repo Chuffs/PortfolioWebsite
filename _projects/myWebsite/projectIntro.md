@@ -2,7 +2,7 @@
 layout: projectsintro
 introPage: true
 projectName: 'My Website'
-title: 'The micromatt Website'
+title: 'My ePortfolio website'
 postnumber: 0
 description: In this project portfolio I detail how I went about creating my website using Jekyll & GitHub Pages, in the hopes that my struggles help someone create their own with a little more ease.
 
