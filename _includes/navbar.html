@@ -2,16 +2,20 @@
   <!-- Green bar at top of page -->
   <div class="style-bar"></div>
   <!-- Website navigation -->
-    <ul class="navbar">
-      <div class="navbar-nav" id="navbar">
-        <li class="navbar"><a href="/"><img src="{{ site.url }}/assets/websitelogo.png" style="width: 10em" class="navbar-logo" alt="micromatt.tech logo" title="back to home"></a></li>
-        <li class="navbar"><a href="{{ site.url }}/blog/" class="navbar-item">Blog</a></li>
-        <li class="navbar"><a href="{{ site.url }}/projects/" class="navbar-item">Projects</a></li>
-        <li class="navbar"><a href="{{ site.url }}/about/" class="navbar-item">About</a></li>
-        <li class="navbar"><a href="{{ site.url }}/contact/" class="navbar-item">Contact</a></li>
-        <li class="navbar"><a href="javascript:void(0);" style="font-size:25px;" class="navbar-toggle" onclick="navbarToggle()">&#9776;</a></li>
-      </div>
-    </ul>
+      <section>
+        <div style="float: left;">
+          <a href="/"><img src="{{ site.url }}/assets/circlelogo.png" class="navbar-logo" alt="micromatt.tech logo" title="back to home"></a>
+        </div>
+        <div class="navbar-nav" id="navbar">
+          <ul class="navbar">
+            <li class="navbar"><a href="{{ site.url }}/blog/" class="navbar-item">Blog</a></li>
+            <li class="navbar"><a href="{{ site.url }}/projects/" class="navbar-item">Projects</a></li>
+            <li class="navbar"><a href="{{ site.url }}/about/" class="navbar-item">About</a></li>
+            <li class="navbar"><a href="{{ site.url }}/contact/" class="navbar-item">Contact</a></li>
+            <li class="navbar"><a href="javascript:void(0);" style="font-size:25px;" class="navbar-toggle" onclick="navbarToggle()">&#9776;</a></li>
+          </ul>
+        </div>
+      </section>
 </div>
 <div class="link" id="mobile-nav">
   <div class="mobile-link">
