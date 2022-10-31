@@ -3,3 +3,4 @@
 *.psd
 vendor/
 _site/
+my_key*
